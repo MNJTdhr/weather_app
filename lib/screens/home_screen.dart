@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("data", style: TextStyle(color: Colors.white)),
+        // title: Text("data", style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.transparent,
         systemOverlayStyle: SystemUiOverlayStyle(
           statusBarBrightness: Brightness.dark,
@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.black,
       extendBodyBehindAppBar: true,
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(40, 10, 40, 20),
+        padding: const EdgeInsets.fromLTRB(40, 35, 40, 20),
         child: SizedBox(
           height: double.infinity,
           child: Stack(
@@ -61,6 +61,31 @@ class HomeScreen extends StatelessWidget {
                 filter: ImageFilter.blur(sigmaX: 100, sigmaY: 100),
                 child: Container(
                   decoration: BoxDecoration(color: Colors.transparent),
+                ),
+              ),
+              SizedBox(
+                height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Location",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w200,
+                      ),
+                    ),
+                    SizedBox(height: 8),
+                    Text(
+                      "Good Morning",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
