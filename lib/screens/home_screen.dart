@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -45,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               Align(
-                alignment: Alignment(0,-1.2),
+                alignment: Alignment(0, -1.2),
                 child: Container(
                   height: 300,
                   width: 300,
@@ -53,6 +55,12 @@ class HomeScreen extends StatelessWidget {
                     shape: BoxShape.circle,
                     color: Colors.orange,
                   ),
+                ),
+              ),
+              BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 100, sigmaY: 100),
+                child: Container(
+                  decoration: BoxDecoration(color: Colors.transparent),
                 ),
               ),
             ],
