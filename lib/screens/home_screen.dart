@@ -85,6 +85,10 @@ class HomeScreen extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
+                    Align(
+                      alignment: Alignment.center,
+                      child: Image.asset("assets/1.png"),
+                    ),
                   ],
                 ),
               ),
