@@ -70,9 +70,10 @@ class HomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Location",
+                      "📍 Location",
                       style: TextStyle(
                         color: Colors.white,
+                        fontSize: 20,
                         fontWeight: FontWeight.w200,
                       ),
                     ),
@@ -88,6 +89,111 @@ class HomeScreen extends StatelessWidget {
                     Align(
                       alignment: Alignment.center,
                       child: Image.asset("assets/1.png"),
+                    ),
+                    Align(
+                      alignment: Alignment.center,
+                      child: Column(
+                        children: [
+                          Text(
+                            "25°C",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 55,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            "SUNNY",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 25,
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(height: 5),
+                          Text(
+                            "Friday 16th - 10:10am",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          SizedBox(height: 30),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Image.asset('assets/11.png', scale: 8),
+                              SizedBox(width: 3),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Sunrise",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  SizedBox(height: 3),
+                                  Text(
+                                    "5:34 am",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                ],
+                              ),
+                              Image.asset('assets/12.png', scale: 8),
+                              SizedBox(width: 3),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Sunset",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  SizedBox(height: 3),
+                                  Text(
+                                    "5:34 pm",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          Divider(height: 50, color: Colors.grey.shade800),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Image.asset('assets/13.png', scale: 8),
+                              SizedBox(width: 3),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Max temp",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  SizedBox(height: 3),
+                                  Text(
+                                    "30°C",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                ],
+                              ),
+                              Image.asset('assets/14.png', scale: 8),
+                              SizedBox(width: 3),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "Min temp",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  SizedBox(height: 3),
+                                  Text(
+                                    "20°C",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                          
+                        ],
+                      ),
                     ),
                   ],
                 ),
